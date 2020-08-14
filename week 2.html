@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display the current date.</p>
+
+<!-- create a button called GET DATE -->
+<!-- on the click of the button, run the code in dateFunction() -->
+<button onclick="dateFunction()">GET DATE</button>
+
+<p id="getdate"></p>
+
+<script>
+	//create a function called dateFunction
+function dateFunction() {
+	//create a variable called d and call the date function
+  var d = new Date();
+  //call the full date method on the variable d
+  d.setUTCFullYear(2020);
+  //get the date and store it in the variable d
+  document.getElementById("getdate").innerHTML = d;
+}
+</script>
+
+</body>
+</html>
